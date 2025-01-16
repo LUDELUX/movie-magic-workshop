@@ -1,0 +1,25 @@
+{
+  "name": "movie-magic-workshop",
+  "version": "1.0.0",
+  "description": "JS-backend-workshop-course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUDELUX/movie-magic-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LUDELUX/movie-magic-workshop/issues"
+  },
+  "homepage": "https://github.com/LUDELUX/movie-magic-workshop#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
