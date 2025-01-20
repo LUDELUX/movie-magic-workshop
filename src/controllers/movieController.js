@@ -2,6 +2,9 @@ import { Router } from "express";
 
 const movieController = Router();
 
+movieController.get('/search',(req,res)=>{
+    res.render('search');
+});
 
 import movieService from "../services/movieService.js";
 
