@@ -3,7 +3,8 @@ import { Router } from "express";
 const movieController = Router();
 
 movieController.get('/search',(req,res)=>{
-    res.render('search');
+    const movies = movieService.getAll();
+    res.render('search',{movies});
 });
 
 import movieService from "../services/movieService.js";
