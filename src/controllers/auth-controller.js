@@ -24,13 +24,15 @@ authController.post('/login', async (req,res)=>{
 
     try {
        const token= await authService.login(email,password);
-       console.log(token);
+       
+       res.cookie('auth',token);
+        res.redirect('/');
        
     } catch (error) {
-        return res.redirect('/404')
+        res.redirect('/404')
     }
 
-    res.redirect('/');
+    
     
 });
 
