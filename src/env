@@ -1,0 +1,2 @@
+DATABASE_URL = monbodb://localhost:2017/magic-movies-jan2025
+JWT_SECRET = $zs$32$s.QWJavtRYvmKfjtgo/eRuVtGl.B2H71Gm1Vq5X9HFYl8qxVG4a9.
