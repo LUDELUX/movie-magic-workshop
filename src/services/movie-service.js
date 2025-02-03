@@ -28,7 +28,7 @@ export default {
     getOneWithCasts(movieId) {
         return this.getOne(movieId).populate('casts');
     },
-    create(movieData,creatorId) {
+    create(movieData, creatorId) {
         const result = Movie.create({
             ...movieData,
             rating: Number(movieData.rating),
@@ -39,11 +39,12 @@ export default {
         return result;
     },
     attachCast(movieId, castId) {
-
-
         return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } });
     },
-    delete(movieId){
+    delete(movieId) {
         return Movie.findByIdAndDelete(movieId);
+    },
+    update(movieId, movieData) {
+        return Movie.findByIdAndUpdate(movieId, movieData);
     }
 }
